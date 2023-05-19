@@ -1,4 +1,4 @@
-const socket = io("https://createtask-server.shia5046.repl.co");
+const socket = io();
 const blockElements = Array.from(document.querySelectorAll("#you > .blocks .row")).map(e => Array.from(e.children));
 const enemyBlockElements = Array.from(document.querySelectorAll("#enemy .blocks .row")).map(e => Array.from(e.children));
 const joinRoomInput = document.getElementById("join-room-input");
